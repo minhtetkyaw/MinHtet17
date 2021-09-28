@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html style="background-color: black;">
+<head>
+  <link rel="icon" href="Min Icon1.jpg" type="image/icon type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Comic Sans MS;
+  color: white;
+  padding: 20px;
+  background: #181818;
+  background-image: url(Background1.jpg);
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 1px;
+  font-size: 40px;
+  font-family: Cooper Black;
+  text-align: center;
+  background: #121212;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  height: 100%;
+  background: #2C2929;312E2E
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  height: 100%;
+  background: #2C2929;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.image {
+  background-color: #242323;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: #646363;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #2C2929;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background: #E1DFDF;
+  }
+}
+
+.container .music{
+  display: flex;
+  background: #white;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 2rem;
+}
+
+
+</style>
+</head>
+<body style="background-color: black;color: #FFFFFF;">
+
+<div class="header">
+  <h2>Division Tag & Paragraph Tag <img src="HTML_Icon.png" style="width:70px;height: 70px;"></h2>
+
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h1>DIVISION TAG</h1>
+      <h5 style="font-size: 15px;">By Min Htet Kyaw, Sep 26, 2021</h5>
+      <div class="image" style="height:350px;">
+        <img src="Division_Tag.png" style="height: 350px;padding-bottom: 40px;width: 100%;">
+      </div>
+      <p style="text-align: justify;">
+        The <b style="font-size: 17px;">div tag</b> is known as Division tag. The div tag is used in <b>HTML</b> to make divisions of content in the web page like (text, images, header, footer, navigation bar, etc). Div tag has both open and closing tag and it is mandatory to close the tag. <b><i>The Div</i></b> is the most usable tag in web development because it helps us to separate out data in the web page and we can create a particular section for particular data or function in the web pages.
+          <br>
+          <li><i>Div tag is Block level tag</i></li>
+          <li><i>It is a generic container tag</i></li>
+          <li><i>It is used to the group of various tags of HTML so that sections can be created and style can be applied to them.</i></li>
+          
+          As we know Div tag is block-level tag in this example div tag contain entire width. It will be displayed div tag each time on a new line, not on the same line.
+      </p>
+    </div>
+    <div class="card">
+      <h1>PARAGRAPH TAG</h1>
+      <h5 style="font-size: 15px;">By Min Htet Kyaw, Sep 26, 2021</h5>
+      <div class="image" style="height:350px;">
+        <img src="Division_Tag.png" style="height: 350px;padding-bottom: 40px;width: 100%;">
+      </div>
+      <p style="text-align: justify;">
+        The paragraph tags are used to define a block of text as a paragraph. This HTML element is one of the basic HTML tags you should learn to use properly.
+          When a block of text is surrounded by the paragraph tags, the browser automatically adds white space before and after the paragraph.
+          <h3 style="font-size: 20px;font-family: Cooper Black">
+          Using the Paragraph Tag
+          </h3>
+          To define a paragraph, you use the opening and closing paragraph set of tags. Prior to XHTML the closing paragraph tag was not required but it is now. Below is an example of how to code a paragraph.
+          
+          <h3 style="font-size: 20px;font-family: Cooper Black">
+          Paragraph Tag Attributes
+          </h3>
+          The paragraph tag has a few basic attributes you should learn about to start with.
+          <li><b>id</b> - this has to be unique to the page. An id can be used on multiple pages but only once on a single page.</li>
+          An id can be used in the stylesheet to set specific formatting to the paragraphs with this id.
+          <li><b>class</b> - A class is used to apply styling to the paragraph. It can be applied to many paragraphs on the page or across the whole website.</li>
+          <li><b>lang</b> - defines the language used in the paragraph. You would use this if the contents of the paragraph is different from the base language of the web page. e.g. French when the rest of the page is in English.</li>
+          <li><b>style</b> - The style attribute is used when you want to apply specific styling to a paragraph.</li>
+          <br>Novice web page coders and some HTML editors do this when using the design view of the HTML editor like a word processing program. This adds unnecessary coding to the web page as this is a typical styling it can be applied using the stylesheet.
+          <br>Using the style attribute of the paragraph tag makes it hard to manage the editing of the website because in the future if you want to change the styling you have to hunt down every instance of that inline style in all the pages. This can be quite a bit of work if you have a large site.
+          <br>We would recommend that you try and avoid using this paragraph tag attribute all together but if you absolutely have to use it, use it very few times.
+          <br>Note: <b><i>the align attribute for the paragraph tag has been deprecated</i></b> and you are to use your stylesheet instead to format the alignment of the paragraph tag contents.
+          Those are the most common paragraph tag attributes you will need to know.
+          The paragraph tag also has events associated with it.
+      </p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h1 style="font-size:30px"><img src="music.png" style="width:25px;height: 25px;padding-right: 3px;align-content: center;"><b style="padding-left: 5px;">Playlists</b></h1>
+        <div class="music">
+          <audio id="player" controls autoplay>
+            <source src="AVSEQ01.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+        </div><br>
+      
+        <div class="music">
+          <audio id="player" controls autoplay>
+            <source src="AVSEQ02.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div><br>
+        
+        <div class="music">
+          <audio id="player" controls autoplay>
+            <source src="AVSEQ03.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div><br>
+
+        <div class="music">
+          <audio id="player" controls autoplay>
+            <source src="AVSEQ04.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div><br>
+
+        <div class="music">
+          <audio id="player" controls autoplay>
+            <source src="AVSEQ05.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div><br>
+
+        <div class="music">
+          <audio id="player" controls autoplay>
+            <source src="AVSEQ06.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div><br>
+
+        <div class="music">
+          <audio id="player" controls autoplay>
+            <source src="AVSEQ07.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div><br>
+
+        <div class="music">
+          <audio id="player" controls autoplay>
+            <source src="AVSEQ08.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div><br>
+
+        <div class="music">
+          <audio id="player" controls autoplay>
+            <source src="AVSEQ09.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div><br>
+
+        <div class="music">
+          <audio id="player" controls autoplay>
+            <source src="AVSEQ10.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div><br>
+        <script>
+          {
+          return {
+          initPlayer: initPlayer
+          };
+          };
+
+          (function() {
+          var player = new audioPlayer();
+
+          player.initPlayer();
+          })();
+        </script>
+    </div>
+
+    <div class="card">
+      <img src="Code2.jpg" style="height: 186px;width: 100%;">
+    </div>
+
+    <div class="card">
+      <img src="Code3.png" style="height: 186px;width: 100%;">
+    </div>
+
+    <div class="card">
+      <img src="GT.jpg" style="height: 186px;width: 100%;">
+    </div>
+
+    <div class="card">
+      <h1 style="font-size:30px"><img src="info2.png" style="width:28px;height: 25px;padding-right: 3px;align-content: center;"><b>About Me</b></h1>
+      <div class="image" style="height:170px;text-align: justify;">Hello everyone my name is Min Htet Kyaw and I am learning Web Basic at RUN FREE EDUCATION.This is my first web design page.In this page I used HTML & CSS.</div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  Copyright 2021 by Refsnes Data. All Rights Reserved.
+  <br>This Page is Powered by Min Htet Kyaw
+  <br>
+  <br><img src="Min Icon1.jpg" style="height: 50;width: 50px;padding-top">
+
+</div>
+
+<div id="tooltip-id" class="mdc-tooltip" role="tooltip" aria-hidden="true">
+  <div class="mdc-tooltip__surface mdc-tooltip__surface-animation">
+    lorem ipsum dolor
+  </div>
+</div>
+
+</body>
+</html>
